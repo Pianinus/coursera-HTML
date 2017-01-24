@@ -1,91 +1,94 @@
 <!doctype html>
-<html lang="en">
+<html>
 	<head>
   		<meta charset="utf-8">
   		<meta http-equiv="X-UA-Compatible" content="IE=edge">
   		<meta name="viewport" content="width=device-width, initial-scale=1">
   		<title>Restaurant MENU</title>
-  		
+  		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  		<link href="css/Restaurant.css" rel="stylesheet">
+  
   		<style>
-  		p {margin-left: 10px;
-  			border: 1px solid black;
-  			width: 150px;
-  			height: 150px;
-  			float: left;
-  		}
-  		#chicken > p {background-color: brown
-  			
-  		}
-  		#beef > p {background-color: yellow;
-  		}
- 		#sushi > p {background-color: green;} 	
-#menu {size: 100%
-	border: 1px solid black;
-	background-color:orange;
-}
-  		.small-1 {size: 12.5%;
+  		
 
+  			/**Media query LARGE**/
 
-  		}
-  		.small-2 {size: 25%;
+  			@media (min-width: 992px) {
+  				.lg-size {float: left;
 
-  			
-  		}
-  		.small-3 {size: 38%;
+  				}
+				
+				.lg-size {width: 33.33%;
+  				}
+  			}
+  	
+			
+			/**Media query MEDIUM**/
+			@media (min-width: 768px) and (max-width: 991px) {
+				.md-size1, .md-size2 {
 
-  			
-  		}
-  		.medium-1 {size: 50%;
+				}
+			
+				.md-size1{
+					width: 50%;
+					float: left;
+					font-size: 90%;
+				}
+				.md-size2{
+					width: 100%;
+					clear: left;
+					font-size: 92%;
 
-  			
-  		}
-  		.medium-2 {size: 63.5%;
+				}
+			}
+			/**Media query SMALL**/
+			@media (max-width: 767px){
+				.sm-size, .name {
 
-  			
-  		}
-  		.medium-3 {size: 76%;
-  			
+				}
 
-  		}
-  		.large-1 {size: 88%;
-  			
+				.sm-size {width: 100%
+				}
+				.name {font-size: 92%;
+				text-align: center;
+				}
 
-  		}
-  		.large-2 {size: 95%;
-
-  			
-  		}
-/**Large devices**/
-  			@media(min-width: 1200px) {{
-  			.large-2}
-  		}
-  		/**Medium device**/
-  		@media (min-width: 798px) {{
-
-  			}}
-  		/**Small device**/
-  		@media(max-width: 400px){{
-  			
-  			}}
-  		</style>
+			}
+		</style>
+		
   	</head>
   
-  <body>
-
-
-	<div id="menu" class="large"> Menu
+	<body>
 	
-		<div id="chicken" class="large-2">
-			<p>Chicken</p>
-		</div>
-		<div id="beef" class="large-2">
-			<p>Beef</p>
-		</div>
-		<div id="sushi" class="large-2">
-			<p>Sushi</p>
-		</div>
+	
+	<h1>MENU</h1>
+	<div id="menu">
 		
-	</div>
-
-</body>
+			<div class="pad lg-size md-size1 sm-size">
+				<div id="chicken" >
+					<div class="name"> Chicken </div>
+					<p>This is text for chicken menu.This is text for chicken menu.
+					This is text for chicken menu.This is text for chicken menu.
+					This is text for chicken menu.This is text for chicken menu.</p>
+				</div>
+			</div>
+			<div class="pad lg-size md-size1 sm-size">
+				<div id="beef">
+					<div class="name"> Beef </div>
+					<p>This is text for beef menu.his is text for beef menu.
+					his is text for beef menu.his is text for beef menu.
+					his is text for beef menu.his is text for beef menu </p>
+				</div>
+			</div>
+			<div class="pad lg-size md-size2 sm-size">
+				<div id="sushi">
+					<div class="name"> Sushi </div>
+					<p>This is text for sushi menu.This is text for sushi menu.
+					This is text for sushi menu.This is text for sushi menu.
+					This is text for sushi menu.This is text for sushi menu.</p>
+				</div>
+			</div>
+	</div>	
+	
+	</body>
 </html>
